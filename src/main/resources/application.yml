@@ -1,0 +1,15 @@
+server:
+  port: 5678
+spring:
+  application:
+    name: andlinks-cloud-sidecar
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+sidecar:
+  port: xxxx                                             #非JVM微服务的端口
+  ip-address: xxxxxx                                     #非JVM微服务的ip地址
